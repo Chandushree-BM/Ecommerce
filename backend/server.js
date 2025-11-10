@@ -10,13 +10,12 @@ connectDB();
 const app = express();
 
 app.use(cors({
-  
-  origin: "https://ecommerce-4-m5gk.onrender.com",
+
+  origin: ["https://ecommerce-4-m5gk.onrender.com","http://localhost:5173","http://localhost:4173"],
   credentials: true,
 }));
 
 // Middleware
-app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
