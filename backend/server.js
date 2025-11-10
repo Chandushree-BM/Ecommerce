@@ -3,11 +3,17 @@ import express from 'express';
 import cors from 'cors';
 import { connectDB } from './src/config/db.js';
 import { errorHandler } from './src/middleware/errorHandler.js';
+import cros from 'cors';  
 
 // Connect to database
 connectDB();
 
 const app = express();
+
+app.use(cors({
+  origin: "https://ecommerce-4-m5gk.onrender.com",
+  credentials: true,
+}));
 
 // Middleware
 app.use(cors());
