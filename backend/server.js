@@ -2,8 +2,7 @@ import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import { connectDB } from './src/config/db.js';
-import { errorHandler } from './src/middleware/errorHandler.js';
-import cors from 'cors';  
+import { errorHandler } from './src/middleware/errorHandler.js'; 
 
 // Connect to database
 connectDB();
@@ -11,6 +10,7 @@ connectDB();
 const app = express();
 
 app.use(cors({
+  
   origin: "https://ecommerce-4-m5gk.onrender.com",
   credentials: true,
 }));
