@@ -3,7 +3,7 @@ import express from 'express';
 import cors from 'cors';
 import { connectDB } from './src/config/db.js';
 import { errorHandler } from './src/middleware/errorHandler.js';
-import cros from 'cors';  
+import cors from 'cors';  
 
 // Connect to database
 connectDB();
