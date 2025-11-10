@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const RAW_API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const RAW_API_URL = import.meta.env.VITE_API_URL || 'https://ecommerce-csur.onrender.com';
 // Ensure base URL ends with /api
 const API_URL = RAW_API_URL.replace(/\/$/, '').endsWith('/api')
   ? RAW_API_URL.replace(/\/$/, '')
