@@ -47,7 +47,7 @@ export default function AdminOrders(){
               <td>₹{o.total}</td>
               <td>{o.status}</td>
               <td>{new Date(o.createdAt).toLocaleString()}</td>
-              <td><Link className="underline" to={`/admin/orders/${o._id}`}>View</Link></td>
+              <td><Link className="underline" to={`/api/admin/orders/${o._id}`}>View</Link></td>
             </tr>
           ))}
         </tbody>

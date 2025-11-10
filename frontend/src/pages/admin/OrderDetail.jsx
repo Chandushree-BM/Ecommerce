@@ -127,7 +127,7 @@ export default function Orders() {
                     <td className="py-3 px-4">{formatDateIST(order.createdAt)}</td>
                     <td className="py-3 px-4">
                       <button
-                        onClick={() => navigate(`/admin/orders/${order._id}`)}
+                        onClick={() => navigate(`/api/admin/orders/${order._id}`)}
                         className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg"
                       >
                         View

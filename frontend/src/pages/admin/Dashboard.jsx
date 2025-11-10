@@ -19,7 +19,7 @@ export default function Dashboard() {
 
   const fetchStats = async () => {
     try {
-      const response = await api.get('/admin/orders/stats/dashboard');
+      const response = await api.get('/api/admin/orders/stats/dashboard');
       setStats(response.data.stats);
     } catch (error) {
       console.error('Error fetching stats:', error);
