@@ -51,11 +51,11 @@ export default function App(){
       {/* Admin */}
       <Route path="/admin/login" element={<AdminLogin />} />
       <Route path="/admin" element={<AdminProtected><Dashboard /></AdminProtected>} />
-      <Route path="/admin/products" element={<AdminProtected><Products /></AdminProtected>} />
-      <Route path="/admin/products/new" element={<AdminProtected><ProductForm /></AdminProtected>} />
-      <Route path="/admin/products/:id" element={<AdminProtected><ProductForm /></AdminProtected>} />
-      <Route path="/admin/orders" element={<AdminProtected><AdminOrders /></AdminProtected>} />
-      <Route path="/admin/orders/:id" element={<AdminProtected><OrderDetail /></AdminProtected>} />
+      <Route path="/api/admin/products" element={<AdminProtected><Products /></AdminProtected>} />
+      <Route path="/api/admin/products/new" element={<AdminProtected><ProductForm /></AdminProtected>} />
+      <Route path="/api/admin/products/:id" element={<AdminProtected><ProductForm /></AdminProtected>} />
+      <Route path="/api/admin/orders" element={<AdminProtected><AdminOrders /></AdminProtected>} />
+      <Route path="/api/admin/orders/:id" element={<AdminProtected><OrderDetail /></AdminProtected>} />
     </Routes>
     </>
   );

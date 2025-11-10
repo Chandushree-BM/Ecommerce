@@ -94,7 +94,7 @@ export default function Dashboard() {
           <h2 className="text-xl font-bold text-gray-900 mb-4">Quick Actions</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <a
-              href="/admin/products/new"
+              href="/api/admin/products/new"
               className="block p-4 border-2 border-dashed border-gray-300 rounded-lg hover:border-purple-500 hover:bg-purple-50 transition-colors text-center"
             >
               <Package className="h-8 w-8 text-gray-400 mx-auto mb-2" />

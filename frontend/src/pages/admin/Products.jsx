@@ -42,7 +42,7 @@ export default function Products() {
     if (!window.confirm('Are you sure you want to delete this product?')) return;
 
     try {
-      await api.delete(`/admin/products/${id}`);
+      await api.delete(`/api/admin/products/${id}`);
       toast.success('Product deleted successfully');
       fetchProducts();
     } catch (error) {
@@ -163,7 +163,7 @@ export default function Products() {
                       <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
                         <div className="flex space-x-2">
                           <Link
-                            to={`/admin/products/${product._id}`}
+                            to={`/api/admin/products/${product._id}`}
                             className="text-blue-600 hover:text-blue-900"
                           >
                             <Edit className="h-5 w-5" />

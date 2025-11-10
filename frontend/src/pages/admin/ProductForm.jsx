@@ -34,7 +34,7 @@ export default function ProductForm() {
   const fetchProduct = async () => {
     setIsFetching(true);
     try {
-      const response = await api.get(`/admin/products/${id}`);
+      const response = await api.get(`/api/admin/products/${id}`);
       const product = response.data.product;
       setFormData({
         name: product.name,
@@ -92,13 +92,13 @@ export default function ProductForm() {
       };
 
       if (isEdit) {
-        await api.put(`/admin/products/${id}`, data);
+        await api.put(`/api/admin/products/${id}`, data);
         toast.success('Product updated successfully');
       } else {
-        await api.post('/admin/products', data);
+        await api.post('/api/admin/products', data);
         toast.success('Product created successfully');
       }
-      navigate('/admin/products');
+      navigate('/api/admin/products');
     } catch (error) {
       toast.error(error.response?.data?.message || 'Failed to save product');
     } finally {
